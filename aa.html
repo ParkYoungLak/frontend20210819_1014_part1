@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+   <ul>
+       <li><button type="button" onclick="birthdayAlert(event)">Press</button>
+        </li>
+        <script>
+            function birthdayAlert(e) {
+              let eventNumber= prompt("1~120의 숫자를 입력하세요");
+              const NumberInput = Number(eventNumber);
+              let result = 0;
+              //console.log(NumberInput);
+              if(typeof(NumberInput!==Number)){
+                alert('숫자만 입력하세요')
+                let eventNumber2 = Number(prompt('1~120의 숫자를 입력하세요'));
+                result = 2021-eventNumber2;
+               
+             }else{result = 2021-NumberInput;}
+             return alert('당신이 태어난 해는 : '+ result + "입니다");
+            }
+            </script>
+   </ul>
+</body>
+</html>
